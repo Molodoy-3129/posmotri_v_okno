@@ -306,6 +306,8 @@ input[type="checkbox"]:focus-visible + span {
 
 .content__video-card {
     margin-bottom: 0;
+
+    
 }
 
 .content__card-link {
