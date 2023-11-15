@@ -55,7 +55,7 @@ ol {
 }
 
 .result__video-container {
-    margin-bottom: 26px;
+    margin-bottom: 19px;
 }
 
 .result__video {
@@ -73,13 +73,15 @@ ol {
     width: auto;
     align-items: flex-start;
     gap: 30px;
-    position: relative;
+    
 }
 .content__list {
-    height: 300px;
+    height: 290px;
     overflow-y: auto;
     display: grid;
     gap: 30px;
+    width: fit-content;
+    position: relative;
 }
 
 .content__video-card {
@@ -89,6 +91,7 @@ ol {
 
 .content__list-item {
     width: 399px;
+    margin-right: 2px;
 }
 
 .content__video-card {
@@ -157,6 +160,9 @@ input[type="checkbox"] + span {
     height: 19px;
     border: 1px solid #fff;
 }
+input[type="checkbox"]:focus + span {
+ 
+}
 
 input[type="checkbox"]:checked + span {
     background: #fff;
@@ -168,7 +174,7 @@ input[type="checkbox"]:checked + span {
 }
 
 input[type="checkbox"]:focus-visible + span {
-    background: white;
+    
 }
 
 .search-form__checkbox-list {
@@ -199,6 +205,7 @@ input[type="checkbox"]:focus-visible + span {
 
 .search-form__textfield:focus {
     outline: none;
+    
 }
 
 .search-form__label:has(:focus-visible) {
@@ -216,7 +223,7 @@ input[type="checkbox"]:focus-visible + span {
 }
 
 .search-form__label:active {
-    /* outline: 1px solid #fff;  на проверку*/
+  /* outline: 1px solid #fff;  на проверку*/
 }
 
 .button:active {
@@ -286,9 +293,11 @@ input[type="checkbox"]:focus-visible + span {
     align-items: center;
 }
 
-.content__video-card:active {
-    background: #545050;
+
+.content__card-link:focus {
+  outline: none;
 }
+
 
 .content__video-card:hover {
     cursor: pointer;
@@ -303,7 +312,14 @@ input[type="checkbox"]:focus-visible + span {
 
 .content__card-link {
     text-decoration: none;
+  
 }
+.content__card-link_current {
+  display: block;
+  background: #545050;
+}
+
+
 
 .result__video-container {
     position: relative;
